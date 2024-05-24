@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastra Buracos</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../style/map.css">
+    
+</head>
+<body>
+  
+    <!-- Div onde o mapa será exibido -->
+    <div id="map"></div>
+    <button id="adicionar-raio">mudar raio de busca</button>
+
+    <!-- Div para exibir informações de latitude e longitude -->
+    <div id="info"></div>
+
+    <!--<script src="initMap.js"></script>
+    <script src="markerManagement.js"></script>
+    <script src="communication.js"></script>-->
+    <script>
+
+function handleMapLoadError() {
+    // Trate o erro de carregamento da biblioteca aqui
+    console.error('Erro ao carregar a biblioteca do Google Maps.');
+  }
+
+  async function loadGoogleMapsScript() {
+    return new  Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDUUv_0OqSPrtar_vDcLL0VP_x6wve6gzE&callback=initMap&libraries=geometry';
+      script.async = true;
+      script.defer = true;
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
+
+  async function main() {
+    try {
+      await loadGoogleMapsScript();
+    } catch (error) {
+      handleMapLoadError();
+    }
+  }
+
+  main();
+
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="../script/map/map.js"></script>
+
+
+    
+    
+</body>
+</html>

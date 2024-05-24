@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../img/hd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top
+    
+}
+#loginForm{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 450px;
+    width: 400px;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.camp{
+    display: flex;
+    flex-direction: column;
+}
+.ajuste{
+  position: relative;
+}
+div i {
+  font-size: 30px;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 26px;
+  margin-left: 87%;
+}
+label {
+    font-size: 16px; 
+    color: purple; 
+    margin-bottom: -7px; 
+    display: block;
+  }
+  
+form div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+Input {
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #ccc; /* Borda com cor cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 250px; /* Largura do input */
+    transition: border-color 0.3s ease; /* Transição suave da cor da borda */
+  }
+  
+Input:focus {
+    border-color: dodgerblue; /* Cor da borda quando em foco */
+    outline: none; /* Remove o contorno ao redor do input */
+    box-shadow: 0 0 5px dodgerblue; /* Sombra ao redor do input quando em foco */
+  }
+  
+  Input::placeholder {
+    color: #999; /* Cor do texto do placeholder */
+  }
+  
+  /* Estilizando o botão */
+  button {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: dodgerblue; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+  }
+  
+  button:hover {
+    background-color: #007acc; /* Cor de fundo quando hover */
+  }
+  p{
+    color: red;
+  }
+  
